@@ -1,12 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
-
+import datetime
 
 def main(request):
     '''
-    Show 'Hello world!' in the main page
+    Render the main page
     '''
-    return HttpResponse('Hello world')
-
+    context={'like':'Django 很棒'}
+    context.update({'now':datetime.datetime.now()})
+    return render(request, 'main/main.html', context)
 # Create your views here.

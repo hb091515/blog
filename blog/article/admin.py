@@ -15,7 +15,5 @@ class CommentModelAdmin(admin.ModelAdmin):
         model = Comment
 
 
-
-
 admin.site.register(Article)
 admin.site.register(Comment, CommentModelAdmin)

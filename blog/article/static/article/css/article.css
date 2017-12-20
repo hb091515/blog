@@ -1,6 +1,6 @@
 .articleContent {
   padding: 2em;
-  background-color: #0d8ca5;
+  background-color: #ffe4c4;
   border: thin solid gray;
   border-radius: 1em;
 }
@@ -16,4 +16,8 @@
 .commentTime {
   font-size: 0.6em;
   color: #777777;
+}
+
+input[type=text] {
+  padding: 0.4em;
 }
